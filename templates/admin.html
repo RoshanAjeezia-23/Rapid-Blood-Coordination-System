@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        h1 {
+            color: #b30000;
+            margin-top: 40px;
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .card h2 {
+            color: #b30000;
+        }
+
+        .number {
+            font-size: 35px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>Total Donors</h2>
+            <p class="number">{{ total_donors }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Emergency Requests</h2>
+            <p class="number">{{ total_requests }}</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
